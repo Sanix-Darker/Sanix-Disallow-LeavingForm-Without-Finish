@@ -5,22 +5,20 @@
         var formsCollection = document.getElementsByTagName("form");
         for(var j=0;j<formsCollection.length;j++)
         {
-          console.log(formsCollection[j]);
+          console.log("Form:");
           var str = '';
           var elem = formsCollection[j].elements;
           for(var i = 0; i < elem.length; i++)
           {
             if(elem[i].type == "text" || elem[i].type == "number" || elem[i].type == "password" || elem[i].type == "checkbox" || elem[i].type == "radio"){
               ids.push(elem[i]);
+              console.log(elem[i]);
             }
-              str += "<b>Type:</b>" + elem[i].type + "&nbsp&nbsp";
-              str += "<b>Name:</b>" + elem[i].name + "&nbsp;&nbsp;";
-              str += "<b>Value:</b><i>" + elem[i].value + "</i>&nbsp;&nbsp;";
-              console.log(str);
           } 
         }
     }
     DisplayFormValues();
+
 
     // Setting inut submit onsubmit 
     document.querySelectorAll('form input[type*=submit],form button[type*=submit]')

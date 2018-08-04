@@ -20,7 +20,7 @@ When you Close the page with a field in a form that's not empty it's Warm you
 	</head>
 	<body>
 
-		....
+		<!-- .... Your webpage content ... -->
 
 		<script type="text/javascript" src="https://rawgit.com/Sanix-Darker/Sanix-Disallow-LeavingForm-Without-Finish/master/script.min.js"></script>
 	</body>
